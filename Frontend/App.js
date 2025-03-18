@@ -20,7 +20,7 @@ function reload() {
 
 async function fetchnews(query) {
     try {
-        let res = await axios.get(`http://localhost:5000/api/news?q=${query}`);
+        let res = await axios.get(`https://samachar-backend-bje6.onrender.com/api/news?q=${query}`);
         console.log(res.data.articles);
         let articles = res.data.articles;
         bind(articles);
